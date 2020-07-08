@@ -1,0 +1,16 @@
+
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+<image bindtap="back" src="../../../image/back.png"></image> 
+</view>
+
+<text class="txt">设置</text>
+
+<view style="margin-top:50rpx" class="tab"><text>通知</text><image src="../../../image/zhong.png"></image></view>
+<view class="tab"><text>国家</text><text class="c">中国</text></view> 
+<view class="tab"  bindtap="rmb"><text>货币</text> <text class="c">￥人民币</text> </view>
+<view class="tab"><text>服务条款</text><text class="c">></text></view>
+<view class="tab"><text>隐私政策</text> <text class="c">></text></view>
+<view class="tab"><text>反馈</text> <text class="c">></text> </view>
+
+<view class="btn">注销</view>

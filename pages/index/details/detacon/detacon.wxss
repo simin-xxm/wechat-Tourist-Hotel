@@ -1,0 +1,305 @@
+
+page{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('http://img5.imgtn.bdimg.com/it/u=2852332523,1976444776&fm=26&gp=0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.System_bar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0,0);
+}
+.System_bar image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.footer{
+  width: 100%;
+  height: 15%;
+  border-top: 1px solid white;
+  position: fixed;
+  top: 85%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.footer view{
+  width: 90%;
+  height: 100rpx;
+  border-radius: 70rpx;
+  background-color: #13C2C2;
+  color: white;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 100vw;
+  box-sizing: border-box;
+}
+.container .decofor{
+  width: 100%;
+  height: 100rpx;
+  opacity: 0;
+}
+.content{
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.box_title{
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid #F8F8F8;
+}
+.box_title_left{
+  width: 80%;
+  height: 100%;
+  padding: 20px 0px 0px 0px;
+  box-sizing: border-box;
+}
+.box_title_left image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.box_title_left text{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.box_title_right{
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 50rpx 10rpx 0rpx 10px;
+}
+.box_title_right :first-child{
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.introduction{
+  width: 100%;
+  height:700rpx;
+  overflow: hidden;
+}
+.introduction .js{
+  font-size: 29rpx;
+  color: #ccc;
+}
+.introduction .txt{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.introduction .qbxs{
+  color: #13C2C2;
+  font-size: 30rpx;
+}
+.introduction .card{
+  box-shadow:  0px 5px 5px #ccc;
+  margin-top: 50rpx;
+  width: 100%;
+  height: 400rpx;
+  border-radius: 50rpx;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.card .card_top{
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.card  image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.card .card_left{
+  width: 25%;
+  height: 100%;
+  font-size: 50rpx;
+  color: #13C2C2;
+  text-align: center;
+  font-weight: bold;
+}
+.card .card_right{
+  width: 75%;
+  height: 100%;
+}
+.card .card_right .star{
+  width: 100%;
+  height: 50%;
+}
+.card .card_right:last-child{
+  font-size: 28rpx;
+}
+.card .card_con{
+  width: 100%;
+  height: 15%;
+  display: flex;
+}
+.card .card_con_left{
+  width: 20%;
+  height: 100%;
+  font-size: 29rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card_con_right{
+  width: 80%;
+  height: 100%;
+  background-color: slategray;
+}
+.card .card_con_right{
+  margin-top: 20rpx;
+  height: 20%;
+  border-radius: 20rpx;
+  background-color: #13C2C2;
+}
+
+/* 照片 */
+.scroll_title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50rpx;
+  font-size: 28rpx;color: #ccc;
+}
+
+.scroll_box{
+  width: 100%;
+  height: 200rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 50rpx;
+}
+.scroll_box .scroll-view_x{
+  width: 100%;
+  height: 100%;
+}
+.scroll_box .box_icon{
+  width: 200rpx;
+  height: 100%;
+  margin-right: 50rpx;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 40rpx;
+  background-color: seagreen;
+  background-image: url('http://img3.imgtn.bdimg.com/it/u=3004311591,3386862574&fm=11&gp=0.jpg');
+  background-size: cover;
+}
+
+/* 评论 */
+
+.comment{
+  width: 100%;
+  height: 250rpx;
+  box-sizing: border-box;
+  padding-top: 10px;
+  border-bottom: 1px solid #FCFCFC;
+}
+.comment .com_top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.comment .com_left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.comment .com_left .txt{
+height: 80%;
+margin-top: 20rpx;
+margin-left: 20rpx;
+}
+.comment .icon{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 110rpx;
+  overflow: hidden;
+  background-size: cover; 
+}
+.comment .com_right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding-left:40rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.comment .com_right view{
+  width: 100%;
+}
+.comment .com_right view:first-child{
+  margin-left: 70%;
+}
+.star {
+  margin-left: 40%;
+}
+.star  image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.com_bottom{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  width: 100%;
+  height: 50%;
+  font-size: 28rpx;
+  color: #ccc;
+}
+.com_bottom .text{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+
+/* 地图 */
+
+.map{
+  width: 100%;
+  height: 500rpx;
+  background-color: aquamarine;
+  overflow: hidden;
+}
+

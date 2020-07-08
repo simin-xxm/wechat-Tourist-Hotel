@@ -1,0 +1,46 @@
+<!--pages/find/hotel/hotel.wxml-->
+
+
+<!-- 酒店详情 -->
+<view class="body" style="background-image: url('{{img}}');">
+  <view class="body_top" style="padding-top:{{statusBar}}px">
+    <view class="body_head">
+      <view class="return" bindtap="return">
+        <image src="../../../image/fx-left.png"></image>
+      </view>
+    </view>
+    <view></view>
+  </view>
+  <view class="body_bottom">
+    <view class="body_lable">
+      <view class="lable_title">{{hotel}}</view>
+      <view style="display: flex;width: 100%;height: 30%;">
+        <view class="label_left">
+          <view style="width:100%">
+            <text>{{city}}</text>
+            <image style="margin-left:10rpx;" src="../../../image/DingW.png"></image>
+            <text >距离{{distance}}KM</text>
+          </view>
+          <view style="width:100%">
+            <image src="../../../image/star.png"></image>
+            <image src="../../../image/star.png"></image>
+            <image src="../../../image/star.png"></image>
+            <image src="../../../image/star.png"></image>
+            <image src="../../../image/star_s.png"></image>
+            <text style="margin-left:10rpx;">{{com}}条评论</text>
+          </view>
+        </view>
+        <view class="label_right">
+          <text style="font-weight: bold;">￥{{price}} \n</text>
+          <text >/每晚</text>
+        </view>
+      </view>
+      <view class="label_btn">
+        立即预定
+      </view>
+    </view>
+    <view class="body_more">
+      更多详情 <image src="../../../image/fx-bottom.png"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+/* pages/find/hotel/hotel.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.body{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body .body_top{
+  width: 100%;
+  height: 50%;
+}
+.body .body_head{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.body .body_head .return{
+  width: 8%;
+  height: 60%;
+  margin-left: 30rpx;
+}
+.body .body_bottom{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.body .body_lable{
+  width: 80%;
+  height: 65%;
+  background: seashell;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50rpx;
+  padding-top: 50rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.body .lable_title{
+  width: 100%;
+  height: 25%;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.body .label_left{
+  width: 70%;
+  height: 100%;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.body .label_left image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.body .label_right{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+.body .label_btn{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 25%;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #13C2C2;
+}
+.body .body_more{
+  width: 80%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40rpx;
+}
+.body .body_more image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,52 @@
+
+<!-- 头部 -->
+<view class="head" style="height:40px;padding-top:{{statusBar}}px;">
+  <view class="return" bindtap="return">
+    <image src="../../../image/fx-left.png"></image>
+  </view>
+  <text>搜索</text>
+  <view style="width:100rpx;"></view>
+</view>
+
+<view class="body">
+  <view class="box_head">
+    <view class="box_head_icon">
+      <image src="../../../image/fdj_sele.png"></image>
+    </view>
+    <input type="text" placeholder="你想去哪?" placeholder-style="color:#ccc"></input>
+  </view>
+  <view class="note">
+    <text>搜索历史</text>
+    <text style="color:#5CC5CD">删除全部</text>
+  </view>
+  <view class="card">
+    <view class="card_box">
+      <view class="card_box_top" style="background-image: url('http://img2.imgtn.bdimg.com/it/u=2026648065,477479531&fm=11&gp=0.jpg');"></view>
+      <view class="card_box_bottom">
+        <text style="">伦敦London \n</text>
+        <text style="font-size: 25rpx;color: #ccc;">1间- 2人 \n</text>
+        <text style="font-size: 25rpx;color: #ccc;">12-22 3月 \n</text>
+      </view>
+    </view>
+    <view class="card_box">
+      <view class="card_box_top" style="background-image: url('http://img0.imgtn.bdimg.com/it/u=2291075799,3431144617&fm=11&gp=0.jpg');"></view>
+      <view class="card_box_bottom">
+        <text style="">东京Dotiy \n</text>
+        <text style="font-size: 25rpx;color: #ccc;">1间- 2人 \n</text>
+        <text style="font-size: 25rpx;color: #ccc;">12-22 3月 \n</text>
+      </view>
+    </view>
+  </view>
+    <view class="card">
+    <view class="card_box">
+      <view class="card_box_top" style="background-image: url('http://img3.imgtn.bdimg.com/it/u=518168665,2216692586&fm=11&gp=0.jpg');"></view>
+      <view class="card_box_bottom">
+        <text style="">纽约NewYork \n</text>
+        <text style="font-size: 25rpx;color: #ccc;">1间- 2人 \n</text>
+        <text style="font-size: 25rpx;color: #ccc;">12-22 3月 \n</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+

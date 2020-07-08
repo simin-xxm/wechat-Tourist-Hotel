@@ -1,0 +1,85 @@
+
+
+image{
+  width: 100%;
+  height: 100%;
+}
+.System_bar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box; 
+  background-color: #13C2C2;
+}
+.System_bar image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: 30rpx;
+}
+.head{
+  width: 100%;
+  height: 250rpx;
+  background-color: #13C2C2; 
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.head text{
+  color: white;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.head button{
+  width: 80%;
+  height: 30%;
+  background-color: white;
+}
+.head .box_head{
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.head .box_head_icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+}
+.head .box_head text{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ccc;
+  margin-left: 30rpx;
+}
+.content{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.content text{
+  font-size: 30rpx;
+}
+.content .tab{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:2PX solid #F5F5F5;
+  font-size: 26rpx;
+}
+.tab_s{
+  font-size: 26rpx;
+  color: #ccc;
+}
+.content .tab:nth-child(6){
+  height: 150rpx;
+  font-weight: 600;
+}
+.content .tab:first-child{
+  height: 150rpx;
+  font-weight: 600;
+}

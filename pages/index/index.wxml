@@ -1,0 +1,93 @@
+<!--index.wxml-->
+
+
+  <view class="head">
+    <view class="head_img"></view>
+    <view class="head_top" style="padding-top:{{statusBar}}px;">
+      <view class="tou">
+      <image src="{{avatarUrl}}"></image>
+      </view>
+    </view>
+    <view class="head_txt">你下一次想去哪?</view>
+    <view class="head_bottom">
+      <view class="head_box">
+        <view class="box_head" bindtap="jump_Tiao">
+          <view class="box_head_icon">
+            <image src="../../image/fdj_sele.png"></image>
+          </view>
+          <text>东京，银座</text>
+        </view>
+        <view class="box_content">
+          <view class="box_content_left" bindtap="jumpcale">
+            <text id="txt_1">选择日期</text>
+            <text style="width:100%;margin-left:15rpx; font-size: 30rpx; font-weight: bold;">3-12日 - 3月22日</text>
+          </view>
+          <view class="box_content_right" bindtap="jumpfj">
+            <text style="width:100%;text-align: center; color: rgb(131, 131, 131);font-size: 30rpx;">房间数</text>
+            <text style="font-size: 30rpx; font-weight: bold;">1间-2人</text>
+          </view>
+        </view>
+        <view class="box_btn" bindtap="jumptravel">
+          <text>搜索酒店</text>
+        </view>
+      </view>   
+    </view>
+  </view>
+
+  <!-- 最近搜索 -->
+  <view class="title">最近搜索</view>
+  <view class="scroll_box"> 
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list" wx:for="{{listss}}" wx:for-item="s" wx:key="key">
+        <view class="item_img" style="background-image: url({{s.img}});"></view>
+        <view class="item_txt">
+          <view class="item_text_tlt">{{s.city}}</view>
+          <view class="item_txt_t">1间-2人</view>
+          <view class="item_txt_t">12-22 3月</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 最受欢迎的旅游圣地 -->
+  <view class="title" style="margin-top:50rpx">最受欢迎的旅游圣地</view>
+  <view class="scroll_box_lv"> 
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list" wx:for="{{listlv}}" wx:for-item="c" wx:key="key" style="background-image: url('{{c.img}}');">
+        <view class="title">{{c.load}}</view>
+      </view>    
+    </scroll-view>
+  </view>
+
+  <!-- 最实惠的价格 -->
+  <view class="title" style="margin-top:50rpx">最实惠的价格</view>
+  <view class="label" bindtap="jumphotle" wx:for="{{listJg}}"  data-id="{{c.id}}" wx:key="key" wx:for-item="c">
+    <view class="label_img" style="background-image: url('{{c.img}}');"></view>
+    <view class="label_con">
+      <view class="label_con_head">
+        <text style="width: 100%; font-size: 35rpx;font-weight: bold;">{{c.Hotel}}</text>
+        <text style="color: #ccc;font-size: 30rpx;">{{c.location}}</text>
+      </view>
+      <view class="label_con_bottom">
+        <view id="jl">
+          <view class="jl_top">
+            <view class="icon"><image src="../../image/DingW.png"></image></view> 
+            <text id="jl_txt">距离 {{c.distance}} KM </text>
+          </view>
+          <view class="jl_bottom">
+            <image src="../../image/star.png"></image>
+            <image src="../../image/star.png"></image>
+            <image src="../../image/star.png"></image>
+            <image src="../../image/star.png"></image>
+            <image src="../../image/star_s.png"></image>
+          </view>
+        </view>
+        <view id="jg">
+          <text style="font-weight: bold;">￥{{c.price}}</text>
+          <text>/每晚</text>
+        </view> 
+      </view>
+    </view>
+  </view>
+
+

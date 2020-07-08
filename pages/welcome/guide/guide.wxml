@@ -1,0 +1,26 @@
+<!--pages/welcome/guide/guide.wxml-->
+<!-- 引导页 -->
+
+
+<view class=" body"> 
+<view class="System_bar" style="height:{{customBar}}px; padding-top:{{custom}}px"></view>
+  <swiper  class="body_swiper" indicator-dots="true" 
+  indicator-color="white" autoplay="true" interval="3000"
+  indicator-active-color="#36CFC9" circular="true"
+  bindchange="monitor"
+  >
+    <swiper-item><image src="../../../image/swiper_1.png"></image></swiper-item>
+    <swiper-item><image src="../../../image/swiper_2.png"></image></swiper-item>
+  </swiper>
+  <view class="txt" style="display:{{hide}}">
+    <text style="font-size: 45rpx;font-weight: bold;">你的旅行计划  \n</text>
+    <text style="color: #ccc;">预定我们独一无二的酒店来逃离平凡</text>
+  </view>
+  <view class="txt" style="display: {{none}};">
+    <text style="font-size: 45rpx;font-weight: bold;">找到最好的酒店  \n</text>
+    <text style="color: #ccc;">无论何时何地都可以找到特价乡村住宅和城市公寓</text>
+  </view>
+
+  <view class="log"  bindtap="jumpLog">登录</view>
+  <view class="sig" bindtap="jumpSig">注册</view>
+</view>

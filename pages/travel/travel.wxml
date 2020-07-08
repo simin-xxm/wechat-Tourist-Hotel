@@ -1,0 +1,68 @@
+
+
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+<image bindtap="back" src="../../image/back.png"></image> 
+</view>
+
+<view class="head">
+  <view class="head_top">
+    <view class="btn">北京</view>
+    <view class="fdj"><image src="../../image/fdj_sele.png"></image>
+    </view>
+    <view class="fdj" bindtap="jumpmap"><image src="../../image/DingW.png"></image>
+    </view>
+  </view>
+  <view class="head_bottom">
+    <view bindtap="jumpcale" class="head_bottom_left" style="border-right: 1px solid #ECECEC;">
+      <view style="color: #ccc;">选择日期</view>
+      <view>12 3月-22 3月</view>
+    </view>
+    <view bindtap="jumpfj" class="head_bottom_right">
+      <view style="color: #ccc;">房间数</view>
+      <view>1间 - 2人</view>
+    </view>
+  </view>
+</view>
+
+<view class="body">
+  <view class="title">
+    <text>共找到11家酒店</text>
+    <view bindtap="jump">
+    <text>筛选</text>
+    <image class="icon" src="../../image/sx.png"></image>
+    </view>
+  </view>
+
+  <view class="card" bindtap="Jjump_hotel" wx:for="{{booked}}" wx:key="key" data-id="{{item.id}}">
+    <view class="card_icon" style="background-image: url('{{item.img}}');"></view>
+    <view class="card_con">
+      <view class="card_con_top">
+        <view class="con_top_left">
+          <view class="con_top_left_tlt">{{item.hotel}}</view>
+          <view class="con_top_left_load">
+            <text>{{item.city}}</text>
+            <view>
+              <image style="width:30rpx;height:30rpx; margin-left:40rpx" src="../../image/DingW.png"></image>
+              距离{{item.distance}}KM
+            </view>
+          </view>
+        </view>
+        <view class="con_top_right">
+          <view style="width: 70%;display: flex;justify-content: flex-end; font-size:30rpx; font-weight: bold;">￥{{item.price}}</view>
+          <view style="width: 70%;display: flex;justify-content: flex-end; font-size:25rpx;">/每晚</view>
+        </view>
+      </view>
+      <view class="card_con_bottom">
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star_s.png" style="margin-right:30rpx;"></image>
+          <text>{{item.com}}条评论</text>
+      </view>
+    </view>
+  </view>
+  
+
+</view>

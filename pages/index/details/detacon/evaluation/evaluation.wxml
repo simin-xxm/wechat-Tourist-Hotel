@@ -1,0 +1,36 @@
+
+
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+<image bindtap="back" src="../../../../../image/back.png"></image> 
+</view>
+<view class="pl">评论({{no}}) \n</view>
+
+<view class="comment" wx:for="{{comment}}" wx:key="key" wx:for-item="c">
+  <view class="com_top">
+    <view class="com_left">
+      <view class="icon" style="background-image: url('{{c.icon}}');"></view>
+      <view class="txt">
+        <text>{{c.name}}\n</text>
+        <text style="font-size: 25rpx;color: #ccc;">{{c.time}}</text>
+      </view>
+    </view>
+    <view class="com_right">
+      <view>{{c.pf}}</view>
+      <view class="star">
+          <image src="../../../../../image/star.png"></image>
+          <image src="../../../../../image/star.png"></image>
+          <image src="../../../../../image/star.png"></image>
+          <image src="../../../../../image/star.png"></image>
+          <image src="../../../../../image/star_s.png"></image>
+      </view>
+    </view>
+  </view>
+    <view class="com_bottom">
+      <view class="text">
+        {{c.txt}} \n
+      </view>
+      <view style="color:black;margin-top:20rpx;text-decoration:underline;">评论</view>
+    </view>
+  </view>
+

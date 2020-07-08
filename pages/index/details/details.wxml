@@ -1,0 +1,20 @@
+
+<!-- 酒店房间页 -->
+<view class="System_bar" style="height:40px; padding-top:{{statusBar}}px">
+  <image bindtap="back" src="../../../image/back.png"></image>
+  <text>{{hotel}}</text>
+  <text style="width:80rpx"></text>
+</view>
+
+<view class="box" bindtap="jumpx" wx:for="{{detali}}" data-id="{{c.id}}" wx:key="key" wx:for-item="c">
+  <view class="box_img"><image src="{{c.img}}"></image></view>
+  <view class="box_con">
+    <view class="box_left">
+      <text style="width:100%">{{c.room}} <text style="color:#ccc;font-size:28rpx">/{{c.np}}人\n</text></text>
+      <text style="margin-top:-50rpx">${{c.price}} <text style="color:#ccc;font-size:28rpx">/每晚</text></text>
+    </view>
+    <view class="box_right">
+      <view class="btn">立即预定</view>
+    </view>
+  </view>
+</view>

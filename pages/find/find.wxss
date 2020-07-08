@@ -1,0 +1,185 @@
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.body .my_trip{
+  width: 90%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 38rpx;
+}
+.body .nav{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 40rpx;
+  border-radius: 60rpx;
+  overflow: hidden;
+  display: flex;
+}
+.body .nav .label{
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  background: #F5F5F5;
+  color: #ccc;
+}
+
+.nav .label.active{
+  color: #7CCBCB;
+}
+
+/* 最近预定 */
+
+.Recently_booked{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Recently_booked .travel_title{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+.Recently_booked .card{
+  width: 90%;
+  height: 550rpx;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px #ccc;
+  border-radius: 20px;
+  margin-bottom: 50rpx;
+}
+.Recently_booked .card_icon{
+  width: 100%;
+  height: 65%;
+  background-size: cover;
+}
+.Recently_booked .card_con{
+  width: 100%;
+  height: 35%;
+}
+.Recently_booked .card_con_top{
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.Recently_booked .con_top_left{
+  width: 75%;
+  height: 100%;
+  overflow: hidden;
+}
+.Recently_booked .con_top_left_tlt{
+  width: 100%;
+  height: 60%;
+  font-size: 35rpx;
+  font-weight: bold;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.Recently_booked .con_top_left_load{
+  width: 100%;
+  height: 40%;
+  color: #ccc;  
+  font-size: 25rpx;
+  font-weight: bold;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.Recently_booked .con_top_right{
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 20rpx;
+  
+}
+.Recently_booked .card_con_bottom{
+  width: 100%;
+  height: 30%;
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.Recently_booked .card_con_bottom .star{
+  width: 30rpx;
+  height: 30rpx;
+}
+.Recently_booked .card_con_bottom text{
+  font-size: 25rpx;
+  color: #ccc;
+}
+
+/* 喜欢 */
+
+.like{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.like .card{
+  width: 90%;
+  height: 280rpx;
+  margin-top: 80rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  box-shadow: 3px 5px 2px #ccc;
+  display: flex;
+}
+.like .card_img{
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+}
+.like .card_right{
+  width: 60%;
+  height: 100%;
+}
+.like .card_top{
+  width: 100%;
+  height: 50%;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  overflow: hidden;
+}
+.like .card_bottom{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.like .card_bottom image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.like .card_bottom .card_bottom_left{
+  width: 60%;
+  height: 100%;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  color: #ccc;
+}
+.like .card_bottom .card_bottom_right{
+  width: 40%;
+  height: 100%;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+

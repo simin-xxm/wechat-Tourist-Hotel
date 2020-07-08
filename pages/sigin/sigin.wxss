@@ -1,0 +1,77 @@
+page{
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+.body{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.System_bar{
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.System_bar image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.deng{
+  width: 90%;
+  height: 100rpx;
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 80rpx;
+}
+.body .bug{
+  width: 90%;
+  height: 50rpx;
+  color: red;
+  font-size: 28rpx;
+  text-align: center; 
+  margin-bottom: 50rpx;
+}
+.body .inp{
+  width: 90%;
+  height: 100rpx;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+  background-color: white;
+  border-radius: 50rpx;
+  margin-bottom: 40rpx;
+}
+.body .upws{
+  position: relative;
+  z-index: 1;
+}
+.body .upws image{
+  position: absolute;
+  top: 50%;
+  transform: translate(50%,-50%);
+  left: 85%;
+  width: 50rpx;
+  height: 40rpx;
+  z-index: 2;
+}
+.body .btn{
+  margin-top: 70rpx;
+  width: 90%;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36CFC9;
+  border-radius: 60rpx;
+  color: white;
+  font-size: 40rpx;
+}
+.body .footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 30%;
+}

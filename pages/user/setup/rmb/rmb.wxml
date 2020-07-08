@@ -1,0 +1,11 @@
+
+<view class="System_bar" style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+  <view class="icon">
+    <image bindtap="back" src="../../../../image/back.png"></image>  
+  </view>
+</view>
+
+<view class="txt">设置</view>
+
+<view class="tab" wx:for="{{list}}" wx:key="key" wx:for-item="c"> <text>{{c.country}}</text> 
+<text class="tab_s">{{c.sys}}</text></view>

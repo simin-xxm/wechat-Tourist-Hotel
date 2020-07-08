@@ -1,0 +1,40 @@
+
+
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+</view>
+
+<block wx:if="{{login}}">
+	<!-- logo -->  
+	<view class="logo">
+		<image class="logoImg" src="../../image/logo.png" mode="widthFix"></image>
+	</view>
+	<!-- 登录按钮 -->
+	<view class="loginButton">
+		<!-- 在本小程序中只实现了微信登录 -->
+		<view class="wechatLogin">
+			<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+				<text class="icon-message"></text> 微信登录
+			</button>
+		</view>
+		<view class="phoneLogin" bindtap="phoneLogin">
+			<button>手机号登录</button>
+		</view>
+	</view>
+</block>
+<block wx:else>
+<view class="head"  bindtap="head" bindtap="jumpprinfo">
+  <view>
+    <text style="font-size: 55rpx;font-weight: bold;">{{nickName}} \n </text>  
+    <text style="font-size: 25rpx;color: #ccc;">查看和编辑</text>  
+  </view>
+  <view class="head_img"><image src="{{avatarUrl}}"></image></view>
+</view>
+
+<view class="tab"><text>修改密码</text><image src="../../image/suo.png"></image></view>
+<view class="tab"><text>邀请朋友</text><image src="../../image/py.png"></image></view>
+<view class="tab"><text>积分&优惠卷</text><image src="../../image/yh.png"></image></view>
+<view class="tab" bindtap="bz"><text>帮助中心</text><image src="../../image/bz.png"></image></view>
+<view class="tab"><text>支付</text><image src="../../image/zf.png"></image></view>
+<view class="tab" bindtap="sz"><text>设置</text><image src="../../image/sz.png"></image></view>
+</block>

@@ -1,0 +1,81 @@
+<!--pages/find/find.wxml-->
+
+<view class="body" style="padding-top:{{statusBar}}px">
+  <view class="my_trip">我的旅行</view>
+  <view class="nav">
+    <text class="label {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap" wx:for="{{navbar}}" wx:key="unique" data-idx="{{index}}">{{item}}</text>
+  </view>
+</view>
+
+
+<!-- 最近预定 -->
+<view hidden="{{currentTab!==0}}" class="Recently_booked">
+  <view class="travel_title">
+    12 3月 - 22 3月 ，1间 - 2人
+  </view>
+  <view class="card" bindtap="Jjump_hotel" wx:for="{{booked}}" wx:key="key" data-id="{{item.id}}">
+    <view class="card_icon" style="background-image: url('{{item.img}}');"></view>
+    <view class="card_con">
+      <view class="card_con_top">
+        <view class="con_top_left">
+          <view class="con_top_left_tlt">{{item.hotel}}</view>
+          <view class="con_top_left_load">
+            <text>{{item.city}}</text>
+            <view>
+              <image style="width:30rpx;height:30rpx; margin-left:40rpx" src="../../image/DingW.png"></image>
+              距离{{item.distance}}KM
+            </view>
+          </view>
+        </view>
+        <view class="con_top_right">
+          <view style="width: 70%;display: flex;justify-content: flex-end; font-size:30rpx; font-weight: bold;">￥{{item.price}}</view>
+          <view style="width: 70%;display: flex;justify-content: flex-end; font-size:25rpx;">/每晚</view>
+        </view>
+      </view>
+      <view class="card_con_bottom">
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star.png"></image>
+          <image class="star" src="../../image/star_s.png" style="margin-right:30rpx;"></image>
+          <text>{{item.com}}条评论</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 已完成 -->
+<view hidden="{{currentTab!==1}}">
+  
+</view>
+<!-- 喜欢 -->
+<view hidden="{{currentTab!==2}}" class="like" >
+    <view class="card" bindtap="Jjump_hotel" wx:for="{{booked}}" wx:key="key" wx:for-item="c" data-id="{{c.id}}">
+      <view class="card_img" style="background-image: url('{{c.img}}');"></view>
+      <view class="card_right">
+        <view class="card_top">
+          <text style="font-weight: bold;font-size: 38rpx;">{{c.hotel}}\n</text>
+          <text style="font-size: 28rpx;color: #ccc;">c.city</text>
+        </view>
+        <view class="card_bottom">
+          <view class="card_bottom_left">
+            <view style="width:100%">
+              <image src="../../image/DingW.png"></image>
+              距离 {{c.distance}}KM
+            </view>
+            <view style="width:100%;margin-top:10rpx">
+              <image src="../../image/star.png"></image>
+              <image src="../../image/star.png"></image>
+              <image src="../../image/star.png"></image>
+              <image src="../../image/star.png"></image>
+              <image src="../../image/star_s.png"></image>
+            </view> 
+          </view>
+          <view class="card_bottom_right">
+            <text style="font-size:30rpx;display: flex;justify-content: flex-end; font-weight: bold;">￥{{c.price}} \n</text>
+            <text style="font-size:28rpx;display: flex;justify-content: flex-end;margin-right:20rpx;">/每晚</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

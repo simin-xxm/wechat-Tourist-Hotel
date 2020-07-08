@@ -1,0 +1,68 @@
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+<image bindtap="back" src="../../../image/back.png"></image> 
+<text>地图</text>
+<view style="width:50rpx;"></view>
+</view>
+
+<view class="head">
+  <view class="head_top">
+    <view class="btn">北京</view>
+    <view class="fdj"><image src="../../../image/fdj_sele.png"></image>
+    </view>
+  </view>
+  <view class="head_bottom">
+    <view bindtap="jumpcale" class="head_bottom_left" style="border-right: 1px solid #ECECEC;">
+      <view style="color: #ccc;">选择日期</view>
+      <view>12 3月-22 3月</view>
+    </view>
+    <view bindtap="jumpfj" class="head_bottom_right">
+      <view style="color: #ccc;">房间数</view>
+      <view>1间 - 2人</view>
+    </view>
+  </view>
+</view>
+<view class="map">
+    <map
+    id="myMap"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    markers="{{markers}}"
+    covers="{{covers}}"
+    show-location    
+    >
+    </map>  
+    <view class="scroll_box">
+    <scroll-view class="scroll-view_x" enable-flex='true' scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list" wx:for="{{listss}}" wx:key="key" wx:for-item="c">
+      <view class="box">
+        <view class="list_left" style="background-image: url('{{c.img}}');"></view>
+        <view class="list_right">
+          <view class="list_right_top">
+            <text style="font-weight:bold;">{{c.name}} \n</text>
+            <text style="color:#ccc;font-size:28rpx;">{{c.city}}</text>
+          </view>
+          <view class="list_right_bottom">
+            <view class="top">
+            <view><image src="../../../image/DingW.png"></image> <text style="font-size:28rpx;color:#ccc;">距离8KM</text></view>
+            <text style="font-weight: 600;">￥{{c.price}}</text>
+            </view>
+            <view class="bottom">
+              <view>
+                <image src="../../../image/star.png"></image>
+                <image src="../../../image/star.png"></image>
+                <image src="../../../image/star.png"></image>
+                <image src="../../../image/star.png"></image>
+                <image src="../../../image/star.png"></image>
+              </view>
+              <view style="font-size:28rpx">
+                /每晚
+              </view>              
+            </view>
+          </view>
+        </view>
+      </view>
+      </view>
+    </scroll-view>
+    </view>    
+</view>

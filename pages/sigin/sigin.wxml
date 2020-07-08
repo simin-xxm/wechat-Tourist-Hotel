@@ -1,0 +1,19 @@
+
+<!-- 注册页面 -->
+
+<view class="body">
+  <view class="System_bar" style="height:40px; padding-top:{{statusBar}}px">
+    <image bindtap="back" src="../../image/back.png"></image>
+  </view>
+
+  <view class="deng">注册</view>
+
+  <!-- 登录注册 -->
+<input class="inp name" type="text" placeholder="昵称"></input>
+  <input class="inp umail" type="text" placeholder="邮箱"></input>
+  <input class="inp upws" type="{{show}}" placeholder="密码">
+   <image bindtap="look" data-index="{{isshow ? '1'&'1':'2'}}"  src="{{isshow == 1 ?'../../image/yang_s.png':'../../image/yang.png'}}"></image>
+  </input>
+  <button class="btn">同意协议并注册</button>
+  <view class="footer">已有账号? <text style="color:#36CFC9" bindtap="jumplog">登录</text> </view>
+</view>

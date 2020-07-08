@@ -1,0 +1,10 @@
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+<image bindtap="back" src="../../../image/back.png"></image> 
+<text>筛选</text>
+<view style=" width: 50rpx;"></view>
+</view>
+
+<view class="">
+
+</view>

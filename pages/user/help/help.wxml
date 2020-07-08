@@ -1,0 +1,23 @@
+
+
+<view class="System_bar" 
+style="height:{{customBar}}px;padding-top:{{statusBar}}px">
+<image bindtap="back" src="../../../image/back.png"></image> 
+</view>
+
+<view class="head">
+  <text>您需要什么帮助？ \n</text>
+  <view class="box_head">
+    <view class="box_head_icon">
+      <image src="../../../image/fdj_sele.png"></image>
+      </view>
+      <text>搜寻帮助文章</text>
+  </view>
+</view>
+
+<view class="content">
+  <view class="tab" wx:for="{{list}}" wx:key="key" wx:for-item="c">
+    <text>{{c.country}}</text>
+    <text class="tab_s">{{c.sys}}</text>
+  </view>
+</view>

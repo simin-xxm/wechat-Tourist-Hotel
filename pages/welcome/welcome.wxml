@@ -1,0 +1,17 @@
+
+
+
+<view class="body" style="">
+  <view class="System_bar" style="height:{{40}}px; padding-top:{{statusBar}}px"></view>
+  
+  <view class="body_top">
+    <view class="icon"><image src="../../image/logo.png"></image></view>
+    <text style="margin-top:30rpx;font-size: 65rpx;font-weight: bold;">Roome</text>
+    <text>在您旅行中找到最好的优惠旅店</text>
+  </view>
+  <view class="body_bottom">
+    <view class="body_bottom_btn" bindtap="welcome">开始</view>
+    <text>已经有账号了？</text><text style="color:#36CFC9"  bindtap="jumpLog">登录</text>
+  </view>
+</view>
+

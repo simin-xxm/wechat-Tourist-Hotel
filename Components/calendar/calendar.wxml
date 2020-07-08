@@ -1,0 +1,42 @@
+<image class="bg-img"   bindtap="jumpinx" src="https://w.wallhaven.cc/full/0w/wallhaven-0w78er.jpg"></image>
+  
+  <view class="content">
+    <view class="con_top">
+      <view class="stroke"style="border-right:1px solid #ccc">
+        <text style="font-size: 25rpx;color: #ccc;">出发 \n</text>
+        <text>{{setoff}}</text>
+      </view>
+      <view class="stroke">
+        <text style="font-size: 25rpx;color: #ccc;">返回\n</text>
+        <text>{{back}}</text>
+      </view>
+    </view>
+    <view class='calendar'>
+      <!--显示当前年月日-->
+      <view class='calendar-title'>
+          <view class='item ctrl' bindtap='lastMonth'>{{lastMonth}}</view>
+          <view class='item title'>{{title}}</view>
+          <view class='item ctrl' bindtap='nextMonth'>{{nextMonth}}</view>
+      </view>
+      <!-- ============平铺展示============  -->
+      <!--遍历星期-->
+      <view class='calendar-week' hidden="{{ toggleType == 'mini' }}">
+          <view wx:for='{{weekText}}' class='item' wx:key='key'>{{item}}</view>
+      </view>
+
+      <view class='calendar-container' hidden="{{ toggleType == 'mini' }}">
+          <!--上个月占位格子-->
+          <view class='grid gray' wx:for='{{empytGridsBefore}}' wx:key='key'>{{item}}</view>
+
+          <!--当月格子-->
+          <view class='grid' wx:for='{{thisMonthDays}}' wx:key='key'>
+              <view class='self' wx:if="{{ format === year+'-'+item.monthFormat+'-'+item.dateFormat }}"></view>
+              <view class="wrap {{ select === year+'-'+item.monthFormat+'-'+item.dateFormat ? 'select' :''}}" bindtap='select' data-date='{{item.date}}'>{{item.date}}</view>
+          </view>
+
+          <!--下个月占位格子-->
+          <view class='grid gray' wx:for='{{empytGridsAfter}}' wx:key='key'>{{item}}</view>
+          </view>
+          <view class="btn">确定</view> 
+    </view>   
+  </view>

@@ -1,0 +1,32 @@
+
+<image class="bg-img" bindtap="jumpinx"  src="https://w.wallhaven.cc/full/0w/wallhaven-0w78er.jpg"></image>
+  
+  <view class="content">
+    <view class="box">
+      <view class="box_left">房间数</view>
+      <view class="box_right">
+        <image bindtap="jia_1" src="../../../image/jian.png"></image>
+        <text>{{int_1}}</text>
+        <image bindtap="jian_1" src="../../../image/jia.png"></image>
+      </view>
+    </view>
+    <view class="box">
+      <view class="box_left">成年人</view>
+      <view class="box_right">
+        <image bindtap="jia_2" src="../../../image/jian.png"></image>
+        <text>{{int_2}}</text>
+        <image bindtap="jian_2" src="../../../image/jia.png"></image>
+      </view>
+    </view>
+    <view class="box">
+      <view class="box_left">未成年人</view>
+      <view class="box_right">
+        <image bindtap="jia_3" src="../../../image/jian.png"></image>
+        <text>{{int_3}}</text>
+        <image bindtap="jian_3" src="../../../image/jia.png"></image>
+      </view>
+    </view>
+    <view class="btn">
+      确定
+    </view>
+  </view>
